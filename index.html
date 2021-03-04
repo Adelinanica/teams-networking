@@ -9,8 +9,7 @@
         <h1>Team networking</h1>
         <input type="text" name="search" placeholder="Search">
         
-       
-        <table id="list">
+       <table id="list">
             <thead>
             <tr>
                 <th>Members</th>
@@ -19,24 +18,22 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody> </tbody>
 
         <tfoot>
             <tr>
                 <td>
-                    <input type="text" placeholder="Enter Members" name="first name">
+                    <input type="text" name="members" placeholder="Enter Members" >
                 </td>
                 <td>
-                    <input type="text" placeholder="Enter Project name" name="last name">
+                    <input type="text" name="name" placeholder="Enter Project name" >
                 </td>
                 <td>
-                    <input type="text" placeholder="Enter Project URL" name="git hub account">
+                    <input type="text" name="url" placeholder="Enter Project URL" >
                 </td>
+               
                 <td>
-                    <button>x</button>
-                </td>
-                <td>
-                    <button>Save</button>
+                    <button onclick="saveTeam()">Save</button>
                 </td>
             </tr>
             </tfoot>
