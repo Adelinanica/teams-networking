@@ -28,10 +28,10 @@ fetch("http://localhost:3000/teams-json")
 function addTeam(team){
  fetch("http://localhost:3000/teams-json/create",{
     method: "POST",
+    body: JSON.stringify(team),
     headers: {
       "Content-Type": "application/json"
-    },
-    body: JSON.stringify(team)
+    }
   })
     .then( response =>  response.json())
     .then(status => {
@@ -49,6 +49,7 @@ function saveTeam(){
     members:members,
     url:url
   };
+  
   addTeam(team);
 }
 
