@@ -87,11 +87,12 @@ document.querySelector("table tbody").addEventListener("click", e => {
   }
   else if (e.target.matches("a.edit-btn")){
     const id=e.target.getAttribute("data-id");
-    console.warn("edit?", id)
+    console.warn("edit?", id);
+
+    const editTeam = allTeams.find(team => {
+     // console.warn('find team', team.id == id);
+      return team.id == id;
+    });
+    console.warn('edit', editTeam);
   }
 })
-
- 
-
-
-
